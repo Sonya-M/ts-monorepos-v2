@@ -11,6 +11,12 @@ importers:
       '@manypkg/cli':
         specifier: ^0.25.1
         version: 0.25.1
+      prettier:
+        specifier: ^3.5.3
+        version: 3.6.2
+      prettier-plugin-svelte:
+        specifier: ^3.4.0
+        version: 3.4.0(prettier@3.6.2)(svelte@5.43.2)
       syncpack:
         specifier: 14.0.0-alpha.23
         version: 14.0.0-alpha.23
@@ -154,12 +160,6 @@ importers:
       postcss:
         specifier: ^8.5.4
         version: 8.5.6
-      prettier:
-        specifier: ^3.5.3
-        version: 3.6.2
-      prettier-plugin-svelte:
-        specifier: ^3.4.0
-        version: 3.4.0(prettier@3.6.2)(svelte@5.43.2)
       sass-embedded:
         specifier: ^1.89.2
         version: 1.93.3
