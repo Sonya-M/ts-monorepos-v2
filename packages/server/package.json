@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.2",
   "type": "module",
-  "repository": "https://github.com/mike-north/ts-monorepos-v2/tree/main/packages/server",
+  "repository": "https://github.com/Sonya-M/ts-monorepos-v2/tree/play-around/packages/server",
   "scripts": {
     "test": "vitest run",
     "test:watch": "vitest",
