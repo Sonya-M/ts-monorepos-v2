@@ -5,27 +5,28 @@ import tseslint from 'typescript-eslint'
 
 export default tseslint.config(
 	eslint.configs.recommended,
-	tseslint.configs.strictTypeChecked,
+	...tseslint.configs.strictTypeChecked,
 	{
 		languageOptions: {
 			parserOptions: {
 				projectService: true,
-				tsconfigRootDir: __dirname,
+				tsconfigRootDir: process.cwd(),
 			},
 		},
 	},
 	{
-		files: ['src/**/*.ts', 'tests/**/*.ts'],
+		files: ['packages/**/src/**/*.ts', 'packages/**/tests/**/*.ts'],
 		rules: {
 			'@typescript-eslint/no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
 			'@typescript-eslint/restrict-template-expressions': [
 				'error',
 				{ allowNumber: true, allowBoolean: true },
 			],
+			'@typescript-eslint/unified-signatures': 'off', // Bug in rule with complex template literal types
 		},
 	},
 	{
-		ignores: ['**/assets/**/*'],
+		ignores: ['**/assets/**/*', '**/dist/**/*'],
 	},
 	{
 		files: ['**/tailwind.config.js'],

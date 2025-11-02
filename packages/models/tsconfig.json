@@ -3,9 +3,9 @@
   "include": [
     "src/**/*.ts",
     "src/**/*.js",
-    "src/**/*.svelte",
     "tests/**/*.ts",
     "tests/**/*.js",
-    "tests/*/*.svelte"
+    "tests/**/*.svelte",
+    "src/**/*.svelte",
   ]
 }
