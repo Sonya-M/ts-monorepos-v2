@@ -45,7 +45,7 @@ importers:
   packages/models:
     devDependencies:
       '@microsoft/api-documenter':
-        specifier: ^7.26.27
+        specifier: ^7.27.3
         version: 7.27.3(@types/node@24.9.2)
       '@microsoft/api-extractor':
         specifier: ^7.53.3
