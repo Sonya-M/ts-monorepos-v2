@@ -6,6 +6,7 @@
     "build": "pnpm --color run -r build",
     "lint": "pnpm --color run -r lint",
     "test": "pnpm --color run -r test",
+    "test-changed-since-any-git-ref": "pnpm lerna run test --since=play-around",
     "dev": "scripts/dev.sh",
     "format": "prettier --write packages/*/{src,tests}/**/*.ts packages/*/{tailwind.config.js,postcss.config.cjs,vite.config.ts,svelte.config.js}",
     "check": "pnpm --color run -r check"
