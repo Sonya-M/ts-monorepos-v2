@@ -3,6 +3,7 @@
   "targetDefaults": {
     "test": {
       "dependsOn": [
+        "^build",
         "^test"
       ],
       "cache": true
@@ -51,5 +52,8 @@
       }
     }
   ],
-  "nxCloudId": "69108d320beb0c7d9b15f36b"
+  "nxCloudId": "69108d320beb0c7d9b15f36b",
+  "daemon": {
+    "processInactivityLimit": 60000
+  }
 }
